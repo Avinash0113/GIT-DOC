@@ -1,0 +1,497 @@
+1.Compiler?
+high level language convert to lower level language.it execute whole program at a time
+
+2.Interpreter?
+high level language convert to lower level language or assembly language or binary language.it execute each line by line.
+
+3.What is Python?
+--high level programming language
+--general purpose language
+--interpreted language
+--dynamic and powerful language
+--Object Oriented Programming Language(OOP)
+
+4.Advantages of python?
+--python code syntax is readable and understable.
+--application development with python language is very fast.
+--python is developer friendly language.
+
+5.Features?
+--object - oriented language
+--easy to learn and use
+--expressive language
+--interpreted language
+--cross-platform compatable language 
+--free and open source
+--extensible 
+--large standard libary
+--GUI programming support
+--intergated 
+
+6.Python applications?
+--general purpose applications
+	scripting
+	automation
+	networking
+--web applications
+	django
+	flask
+--desktop GUI applications
+	pyQT
+	Tkinter
+	Kivy
+--scientific, data science,Machine Learning & AI applications
+	numpy
+	pandas
+	matplotlib
+	scikit-learn
+--business applications
+	trython
+
+python 3.7 : major version 3,minor version : .7
+7.Versions?
+--python 1.0
+--python 2.0
+--python 2.7 major version
+--python 3.0 present version
+
+8.Algorithm?
+algorithm is a step by step procedure to complete a given task.
+
+9.What is variable?
+--a variable is a name given to a memory location which stores given data.
+--you can store data in variable and you can retrive the data from variable.
+--variable consist of a-z or A-Z or 0-9 or _.
+--first letter should not contain number.
+--should not use keywords as varibles
+--case sensitive difference A or a.
+--no need declaration of data type.
+--declaration a = 10, a= b= c= 10 , a,b,c = 10,20,30
+
+10.Python comment?
+comments are user written words in a program which shows purpoose of the code.
+--single line comment '#'
+--multi-line comment """   """,'''  ''',three single or double line quotes.
+
+11.Indentation?
+indentation is used to represent a block of code.normally indentation level can be defined based upon number of tabs given.
+
+12.Datatype?
+datatype refers to different kinds of data that can be assign to a variable.
+two types: homogeneous,hetrogeneous
+
+13.Different types of datatypes?
+number    (int,float,complex)                    -mutable,
+strings   "python",'python',"""python....."""    -immutable,
+list      [1,2,3,"a","b"]                        -mutable,
+tuple     (1,2,"a","b")                          -immutable,
+dictinory {"a":1,"b":2,"c":"python"}             -mutable,
+set       {1,2,3,4,5}                            -mutable.
+
+14.Operator?
+operator is a symbol which indicates a particular operation between operands(varibles or values).
+
+15. Different types of operators?
+-- arithmetic   (=,-,*,/,%,//,**)
+-- comparision  (==,!=,>,<,<=,>=,<>)
+-- assignment   (=,+=,-=,*=,/=,//=,%=,**=)
+-- logical      (and, or, not)
+-- bitwise      (&,|,~,^,<<,>>)
+-- membership   (in ,not in)
+-- identity     (is,is not) 
+
+16.Arithmetic operator?
+operators are used to perform operations between two operands.
+
+17.Comparision operator?
+opertors are used to comparing the value of the two operands and return boolean.
+
+18.Assigment operator?
+operator are used to assign a value to a variable.
+
+19.Logical operator?
+operator are used to evaluvate a given expression to boolean.
+
+20.Bitwise operator?
+operator are used to perform bit by bit operation among given operands.
+
+21.Membership operator?
+operatorare used to check whether given value is exits or not in a list or tuple, if the value exits in the data structure then returns boolean.
+
+22.Identity operator?
+operator are used to check the address refernce of two varibles is same or not.
+
+23.String?
+string is a datatype are enclosed in a single or double or three single or three double quotes.
+--string is immutable
+
+24.Operator used in string?
+-- +         --concationation
+-- *		 --repetition of string	
+-- []		 --slicing,access the sub-string	
+-- [:]		 --range slice operator,accessing the sub-string
+-- in        --membership,it return particular char in string
+-- not in    --membership,it return particular char not in string
+-- {}		 --using in string formatting
+-- %		 --%s(string),%d(integer),%f(float)
+
+25.Methods in string?
+methods are used by varible.method
+-- len()
+-- find()
+-- lower()
+-- lstrip()
+-- replace(old,new)
+-- rstrip()
+-- split()
+-- swapcase()
+-- upper()
+
+26.What is list?
+list can be defined as a collection of values or items of different datatypes.each item separeted by (,) and eclosed with [].it is mutable. 
+
+27.List methods?
+-- indexing[]
+-- slicing[:]
+-- index[] = value (inserting value by index)
+-- del index[]     (deleting value by index)
+
+28.List operations?
+-- * for       repetition
+-- + for       concationation
+-- in,not in   membership
+-- for loop    iteration
+
+29.Bulit-in functions?
+-- len()
+-- max()
+-- min()
+-- list()
+-- list.append()
+-- list.clear()
+-- list.copy()
+-- list.count()
+-- list.remove()
+-- list.reverse()
+-- list.sort()
+
+30.What is tuple?
+it is a collection  of values or items separeted by comma and enclosed with parenthasis.it is immutable.
+
+31.Tuple methods?
+-- indexing[]
+-- slicing[:]
+
+32.Bulit-in functions?
+-- len()
+-- max()
+-- min()
+-- tuple()
+
+33.What is Dictionary?
+it is a data types having key-value pair separated by commas and enclosed with curly braces.
+
+34.Dictionary methods?
+-- dict['key']         - accessing the value through key
+-- dict['key'] = value - changing the value of a key
+-- dict.keys()           - accessing keys
+-- dict.values()         - accessing values
+-- dict.items()          - accessing key-value
+-- del dict['key']     - deleting key- value by key
+-- dict.clear()        - clear dictinory
+-- dict.copy()		   - copy dictinory	
+-- dict.update()	   - update dictinory	
+-- for i in dict:      - iteration of dictinory
+	
+	for key in dict1.keys():
+	for value in dict1.values():
+	for item in dict1.items():
+
+
+
+35.What is set?
+it can be defined as the unordered collection of various items enclosed with curly braces.the elements of the set can not be duplicate.
+ther is no index attached to the element of the set i.e., we cannot directly access any element of the set by the index.
+
+36.Methods of set?
+-- set.add('element')
+-- set.update(['element1','element2'])
+-- set.remove('element')
+-- set.union('set2')
+-- set.intersetion('set2')              -- common element 
+-- frozenset()                          -- immutable 
+
+37.Nested lists,tuples & dictionaries?
+-- similar datastructure nested:
+	-- lists of lists  ex: a = [[1,2],[3,4],[5,6]]
+	-- tuple of tuple  ex: a = ((1,2),(3,4),(5,6))
+	-- dict of dict    ex: a = {'name':'spidy','age':25,'work':{'college':'study','ground':'playing'}}
+	
+-- disimilar datastructure nested:
+	-- list of tuple  ex: a = [(1,2),(3,4),(5,6)]
+	-- list of dict   ex: a = [{'name':'spidy'},{'name':'captain'},{'name':'ironman'}]
+	-- tuple of list  ex: a = ([1,2],[3,4],[5,6])
+	-- tuple of dict  ex: a = ({'name':'spidy'},{'name':'captain'},{'name':'ironman'})
+	-- dict of list   ex: a = {'name':['spidy','captain','ironman'],'age':[25,35,36]}
+	-- dict of tuple  ex: a = {'name':('spidy','captain','ironman'),'age':(25,35,36)}
+
+38.Decision Making?
+decision making is the process of taking decisions based on outcome of certain conditions(if,else,while,for).
+if the condition true interpreter will execute that specified block of code if it is false it will execute another block of code.
+
+-- types of decision making
+	-- if
+	-- if else
+	-- nested if elif else
+	-- while, while not
+	-- for,for else
+	
+39.If statement?
+it is to test a specific condition.if the condition is true if block execute,if condition is false does not execute the block.
+syntax: if(expression):
+			block of statement
+			
+40.If else?
+it is to test a specific condition.if the condition is true execute that block of statement,if it is flase it will execute another block of statement.
+syntax: if(expression):
+			block of statement
+		else:
+			block of statement
+			
+41.If elif else?
+it is used to check multiple conditions and execute the specific block of statement upon the true conditionamong them.
+syntax: if(expression):
+			block of statement
+		elif(expression1):
+			block of statement
+		elif(expression2):
+			block of statement
+		elif(expression3):
+			block of statement	
+		else:
+			block of statement
+
+42.Loops?
+loop statements are used to execute the code again and again until certain condition is true.
+types of loops:
+-- for loop
+-- while loop
+adavntages:
+-- avoid code repetition
+-- traversing elements of lists,tuples,dict
+
+43.For loop?
+for loop is frequently used to traverse elements in a lisr or tuple or dict.for loop keeps on executing the given code until the specified 
+seqence (range or lists or tuple or dict) exhasut.
+
+syntax: for i in seqence:
+			block of statement
+			
+44.While loop?
+while loop is used to execute the given code continously until its specified condition become true.
+
+syntax:  while expression:
+			block of statement
+			
+45.Break statement?
+it is used to break the loop and get out of loop.
+
+syntax:  for i in range(1,11):
+			if i == 5:
+				break
+			print(i)
+
+46.Continue statement?
+it is used to skip current iteration and proceed for next iteration.
+
+syntax:  for i in range(1,11)
+			if i == 5:
+				continue
+			print(i)
+			
+47.Pass Statement?
+it does not do anything, it is used for syntactical support for a program.
+
+syntax:  for i in range(1,100):
+			pass
+			
+48.Funtions?  
+a function is an orgainized block of reusable code with a specific name, which can be called whenever required.
+
+syntax:  def function_name(arguments):
+			block of statements
+			return expression
+			
+49.Avantages of function?
+-- code reuse
+-- modularity
+-- better debugging
+
+50.Types of arguments?
+-- positional
+	syntax:  def add(a,b):
+				result a + b
+			x = add(10,20)
+			
+-- keyword
+	syntax:  def add(a,b):
+				result a + b
+			x = add(a = 10,b = 20) or add(b = 10,a = 20) or add(20,b = 10)
+
+-- default
+	syntax:  def add(a,b = 10):
+				result a + b
+			x = add(20)
+			
+-- variable length
+
+	syntax:  def add(*numbers):
+				result a + b
+			x = add(10,20) or add(10,20,30,40)
+			
+51.Scope of varible and LEGB rule?
+it is depend upon the location where the varible is being declared.the varible declared in one part of the program  may not be accessible to the other parts.
+
+LEGB:
+Local -- Enclosed -- Global -- Buit-in
+-- Local : variable not declared global or assigned in a function.
+-- Enclosed : variable defined in a function that wrapped inside another function.
+-- Global : variable declared global, or assigned at the top-levl of file.
+-- Built-in : variable preassigned in the built-in names module.
+
+two types of scopes:
+-- global scope
+	a variable declared outside the function.
+	syntax:  a = 100
+			 def num():
+				a = 50
+				print(a)
+			print(a)
+			num()
+	
+-- local scope
+	a variable declared inside the function.
+	syntax: 
+			 def num():
+				a = 50
+				print(a)
+			print(a)
+			num()
+
+52.Lambda function? Map,Filter,Reduce?
+it is also called anoynonmous function which doesn't have a function name.it can  accept any number of arguments,but they can return only one value(same as in return keyword in user-defined functions) in the
+form of expression.
+
+syntax:  lambda arguments : expression
+			ex: x = lambda a : a + 10
+			
+Filter -- filter() function is built-in function that applies given function to each item of an iterable() and returns only a list of  filtered  True condition results.
+
+syntax:
+		a = [12,23,34,54,566,767,788,56,56,434]
+		result = list(fliter(lambda x : x % 2 == 0, a))
+
+Map -- map() function built-in function that applies given function to each item of an iterable() and returns of result with based on function logic.
+
+syntax:
+		a = [12,23,34,54,566,767,788,56,56,434]
+		result = list(fliter(lambda x : x ** 2, a))
+
+Reduce -- reduce() function built-in function that applies given function to each item of an iterable() and returns a single value.
+
+syntax: 
+		a = [12,23,34,54,566,767,788,56,56,434]
+		result = list(fliter(lambda x,y : x + y, a))
+
+
+53.List comprehension?
+it is used to create lists in very concise way.
+
+syntax:  for item in list:
+			if condition:    --->  [expression for item in list if condition]
+			(expression)
+			
+	ex: lst[]
+		for i in range(10):
+			if i % 2 == 0
+				lst.append(i) --->  lst = [i for i in range(10) if i % 2 == 0]
+		print(lst) 					print(lst)
+		
+53. Decorator:
+-- Decorators are one of the most helpful and powerful tools of Python. 
+-- These are used to modify the behavior of the function. 
+-- Decorators provide the flexibility to wrap another function to expand the working of wrapped function, without permanently modifying it.
+-- In Decorators, functions are passed as an argument into another function and then called inside the wrapper function.
+
+Syntax:
+		def plus_one(number):
+			def add_one(number):
+				return number + 1
+
+			result = add_one(number)
+			return result
+		plus_one(4)
+		
+OUUPUT: 5
+
+54.ITERATOR:
+
+-- An iterator is an object that contains a countable number of values.
+-- An iterator is an object that can be iterated upon, meaning that you can traverse through all the values.
+-- Technically, in Python, an iterator is an object which implements the iterator protocol, which consist of the methods __iter__() and __next__().
+
+55.GENERATORS:
+
+-- It is similar to the normal function defined by the def keyword and uses a yield keyword instead of return. 
+-- we can say that if the body of any function contains a yield statement, it automatically becomes a generator function.
+
+LOGGING:
+
+-- When you run a python script, you want to know what part of the script is getting executed and inspect what values the variables hold. 
+
+-- Usually, you may just ‘print()‘ out meaningful messages so you can see them in the console.
+
+-- when you use this approach on larger projects with multiple modules you want a more flexible approach. Because, the code could go through different stages as in development, debugging, review, testing or in production. 
+
+-- The type of messages you want to print out during development can be very different from want you to see once it goes into production. Depending on the purpose, you want the code to print out different types of messages. 
+
+-- during a certain ‘testing’ run, you want to see only warnings and error messages. 
+
+-- Whereas during ‘debugging’, you not only want to see the warnings and error messages but also the debugging-related messages.
+
+-- If you want to print out which module and at what time the codes were run, your code could easily get messier. All these issues are nicely addressed by the logging module. Using logging, you can:
+
+-- Control message level to log only required ones
+-- Control where to show or save the logs
+-- Control how to format the logs with built-in message templates
+-- Know which module the messages is coming from
+
+56.PYTEST:
+
+-- Install pytest using pip install pytest
+-- Simple pytest program and run it with py.test command.
+-- Assertion statements, assert x==y, will return either True or False.
+-- How pytest identifies test files and methods.
+-- Test files starting with test_ or ending with _test
+-- Test methods starting with test
+-- py.test command will run all the test files in that folder and subfolders. To run a specific file, we can use the command py.test <filename>
+-- Run a subset of test methods
+-- Grouping of test names by substring matching.py.test -k <name> -v will run all the tests having <name> in its name.
+-- Run test by markers.Mark the tests using @pytest.mark.<name> and run the tests using pytest -m <name> to run tests marked as <name>.
+-- Run tests using py.test -n NUM where NUM is the number of workers
+-- Creating fixture methods to run code before every test by marking the method with @pytest.fixture
+-- The scope of a fixture method is within the file it is defined.
+-- A fixture method can be accessed across multiple test files by defining it in conftest.py file.
+-- A test method can access a Pytest fixture by using it as an input argument.
+-- Parametrizing tests to run it against multiple set of inputs.
+-- @pytest.mark.parametrize(“input1, input2, output”,[(5,5,10),(3,5,12)])
+-- def test_add(input1, input2, output):
+-- assert input1+input2 == output,”failed”
+-- will run the test with inputs (5,5,10) and (3,5,12)
+-- Skip/xfail tests using @pytets.mark.skip and @pytest.mark.xfail
+
+-- Create test results in XML format which covers executed test details using py.test test_sample1.py -v –junitxml=”result.xml”
+-- A sample pytest framework to test an API
+-- Run tests in parallel
+-- Install pytest-xdist using pip install pytest-xdist
+

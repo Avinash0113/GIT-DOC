@@ -1,0 +1,567 @@
+                                                                Os module
+
+OS module in Python provides functions for interacting with the operating system. OS comes under Python’s standard utility modules. This module provides a portable way of using 
+operating system-dependent functionality. The *os* and *os.path* modules include many functions to interact with the file system.
+
+1)Handling the Current Working Directory:-
+To get the location of the current working directory os.getcwd() is used.
+
+import os
+     
+# Get the current working directory (CWD)
+cwd = os.getcwd()
+     
+# Print the current working directory (CWD)
+print("Current working directory:", cwd)
+-------------------------------------------------------------------------------------------------------
+
+2)Changing the Current working directory:-
+
+To change the current working directory(CWD) os.chdir() method is used. This method changes the CWD to a specified path. It only takes a single argument as a new directory path.
+ import os
+   
+# Function to Get the current working directory
+def current_path():
+    print("Current working directory before")
+    print(os.getcwd())
+    print()
+   
+   
+# Driver's code Printing CWD before
+current_path()
+   
+# Changing the CWD
+os.chdir('../')
+   
+# Printing CWD after
+current_path()
+--------------------------------------------------------------------------------------------------------------
+
+3)Creating a Directory:-
+There are different methods available in the OS module for creating a directory. These are –
+
+os.mkdir()
+os.makedirs()
+
+Using os.mkdir():---------
+os.mkdir() method in Python is used to create a directory named path with the specified numeric mode. This method raises FileExistsError if the directory to be created already exists.
+
+
+import os
+ 
+# Directory
+directory = "mahesh"
+ 
+# Parent Directory path
+parent_dir = " "
+ 
+# Path
+path = os.path.join(parent_dir, directory)
+ 
+# Create the directory "mahesh" in '/home / User / Documents'
+os.mkdir(path)
+print("Directory '% s' created" % directory)
+ 
+# Directory
+directory = "mahi.txt"
+ 
+# Parent Directory path
+parent_dir = "D:/Pycharm projects"
+ 
+# mode
+mode = 0o666
+ 
+# Path
+path = os.path.join(parent_dir, directory)
+ 
+# Create the directory "mahesh" in '/home / User / Documents' with mode 0o666
+os.mkdir(path, mode)
+print("Directory '% s' created" % directory)
+
+Using os.makedirs():--------
+os.makedirs() method in Python is used to create a directory recursively. That means while making leaf directory if any intermediate-level directory is missing, os.makedirs() 
+method will create them all.
+
+import os
+     
+# Leaf directory
+directory = "mahesh.personal"
+     
+# Parent Directories
+parent_dir = "D:/Pycharm projects/GeeksForGeeks/Authors"
+     
+# Path
+path = os.path.join(parent_dir, directory)
+     
+# Create the directory "mahesh.personal"
+os.makedirs(path)
+print("Directory '% s' created" % directory)
+     
+
+# Leaf directory
+directory = "important"
+     
+# Parent Directories
+parent_dir = "D:/Pycharm projects/GeeksforGeeks/a/b"
+     
+# mode
+mode = 0o666
+     
+path = os.path.join(parent_dir, directory)
+     
+# Create the directory 'c'
+     
+os.makedirs(path, mode)
+print("Directory '% s' created" % directory)
+
+------------------------------------------------------------------------------------------------------------
+
+4)Listing out Files and Directories with Python:--
+os.listdir() method in Python is used to get the list of all files and directories in the specified directory. If we don’t specify any directory, then the list of files
+and directories in the current working directory will be returned.
+
+import os
+ 
+# Get the list of all files and directories in the root directory
+path = "/"
+dir_list = os.listdir(path)
+ 
+print("Files and directories in '", path, "' :")
+ 
+# print the list
+print(dir_list)
+ 
+----------------------------------------------------------------------------------------------------------------
+5)Deleting Directory or Files using Python:-
+OS module proves different methods for removing directories and files in Python. These are – 
+
+Using os.remove()
+Using os.rmdir()
+
+Using os.remove()
+os.remove() method in Python is used to remove or delete a file path. This method can not remove or delete a directory. If the specified path is a directory then OSError will 
+be raised by the method.
+
+import os
+     
+# File name
+file = 'file1.txt'
+     
+# File location
+location = "D:/Pycharm projects/mahesh/mahesh.personal/"
+     
+# Path
+path = os.path.join(location, file)
+     
+# Remove the file 'file.txt'
+os.remove(path)
+
+
+Using os.rmdir()
+os.rmdir() method in Python is used to remove or delete an empty directory. OSError will be raised if the specified path is not an empty directory.
+
+import os
+     
+# Directory name
+directory = "Geeks"
+     
+# Parent Directory
+parent = "D:/Pycharm projects/"
+     
+# Path
+path = os.path.join(parent, directory)
+     
+# Remove the Directory "mahi.txt"
+os.rmdir(path)
+
+-------------------------------------------------------------------------------------------------------------
+
+6)Commonly Used Functions
+1.os.name: This function gives the name of the operating system dependent module imported. The following names have currently been registered: ‘posix’, ‘nt’, ‘os2’, ‘ce’, ‘java’ 
+and ‘riscos’.
+
+import os
+ 
+print(os.name)
+
+2.os.error: All functions in this module raise OSError in the case of invalid or inaccessible file names and paths, or other arguments that have the correct type, but are not 
+accepted by the operating system. os.error is an alias for built-in OSError exception. 
+
+import os
+ 
+ 
+try:
+    # If the file does not exist,then it would throw an IOError
+    filename = 'GFG.txt'
+    f = open(filename, 'rU')
+    text = f.read()
+    f.close()
+ 
+# Control jumps directly to here if any of the above lines throws IOError.   
+except IOError:
+ 
+    # print(os.error) will <class 'OSError'>
+    print('Problem reading: ' + filename)
+
+3.os.popen(): This method opens a pipe to or from command. The return value can be read or written depending on whether the mode is ‘r’ or ‘w’.
+
+import os
+fd = "GFG.txt"
+ 
+# popen() is similar to open()
+file = open(fd, 'w')
+file.write("Hello")
+file.close()
+file = open(fd, 'r')
+text = file.read()
+print(text)
+ 
+# popen() provides a pipe/gateway and accesses the file directly
+file = os.popen(fd, 'w')
+file.write("Hello")
+# File not closed, shown in next function.
+
+4. os.close(): Close file descriptor fd. A file opened using open(), can be closed by close()only. But file opened through os.popen(), can be closed with close() or os.close(). 
+If we try closing a file opened with open(), using os.close(), Python would throw TypeError. 
+
+import os
+ 
+fd = "GFG.txt"
+file = open(fd, 'r')
+text = file.read()
+print(text)
+os.close(file)
+
+5. os.rename(): A file old.txt can be renamed to new.txt, using the function os.rename(). The name of the file changes only if, the file exists and the user has sufficient privilege 
+permission to change the file.
+
+import os
+ 
+fd = "GFG.txt"
+os.rename(fd,'New.txt')
+
+6. os.remove(): Using the Os module we can remove a file in our system using the remove() method. To remove a file we need to pass the name of the file as a parameter. 
+
+import os #importing os module.
+ 
+os.remove("file_name.txt") #removing the file.
+
+7. os.path.exists(): This method will check whether a file exists or not by passing the name of the file as a parameter. OS module has a sub-module named PATH by using which we 
+can perform many more functions. 
+
+import os
+#importing os module
+ 
+result = os.path.exists("file_name") #giving the name of the file as a parameter.
+ 
+print(result)
+
+8. os.path.getsize(): In this method, python will give us the size of the file in bytes. To use this method we need to pass the name of the file as a parameter.
+
+import os #importing os module
+ 
+size = os.path.getsize("filename")
+ 
+print("Size of the file is", size," bytes.")
+
+____________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________
+                                                               
+															   Datetime module
+
+In Python, date and time are not a data type of their own, but a module named datetime can be imported to work with the date as well as time. Python Datetime module comes built 
+into Python, so there is no need to install it externally.
+
+The DateTime module is categorized into 6 main classes – 
+
+date – An idealized naive date, assuming the current Gregorian calendar always was, and always will be, in effect. Its attributes are year, month and day.
+time – An idealized time, independent of any particular day, assuming that every day has exactly 24*60*60 seconds. Its attributes are hour, minute, second, microsecond, and tzinfo.
+datetime – Its a combination of date and time along with the attributes year, month, day, hour, minute, second, microsecond, and tzinfo.
+timedelta – A duration expressing the difference between two date, time, or datetime instances to microsecond resolution.
+tzinfo – It provides time zone information objects.
+timezone – A class that implements the tzinfo abstract base class as a fixed offset from the UTC.						
+-------------------------------------------------------------------------------------------------------------------------
+1)Date class:--
+The date class is used to instantiate date objects in Python. When an object of this class is instantiated, it represents a date in the format YYYY-MM-DD. Constructor of this class 
+needs three mandatory arguments year, month and date.
+
+
+from datetime import date
+ 
+
+my_date = date(1996, 12, 11)
+ 
+print("Date passed as argument is", my_date)
+
+------------------------------------------------------------------------------------------------------------------------
+2)Get Current Date:--
+To return the current local date today() function of date class is used. today() function comes with several attributes (year, month and day). These can be printed individually. 
+
+# Python program to print current date
+ 
+from datetime import date
+
+today = date.today()
+ 
+print("Today's date is", today)
+------------------------------------------------------------------------------------------------------------------------
+
+3)Get Today’s Year, Month, and Date:--
+We can get the year, month, and date attributes from the date object using the year, month and date attribute of the date class.
+
+from datetime import date
+ 
+# date object of today's date
+today = date.today()
+ 
+print("Current year:", today.year)
+print("Current month:", today.month)
+print("Current day:", today.day)
+------------------------------------------------------------------------------------------------------------------------
+
+4)Get date from Timestamp:--
+We can create date objects from timestamps y=using the fromtimestamp() method. The timestamp is the number of seconds from 1st January 1970 at UTC to a particular date.
+
+from datetime import datetime
+ 
+# Getting Datetime from timestamp
+date_time = datetime.fromtimestamp(1887639468)
+print("Datetime from timestamp:", date_time)
+---------------------------------------------------------------------------------------------------------------------------
+5)Convert Date to String:--
+We can convert date object to a string representation using two functions isoformat() and strftime().
+
+from datetime import date
+   
+# calling the today function of date class
+today = date.today()
+   
+# Converting the date to the string
+Str = date.isoformat(today)
+print("String Representation", Str)
+print(type(Str))
+------------------------------------------------------------------------------------------------------------------------------
+
+Time class:--
+The time class creates the time object which represents local time, independent of any day. 
+
+1)Time object representing time in Python
+
+# Python program to demonstrate time class
+ 
+from datetime import time
+ 
+# calling the constructor
+my_time = time(13, 24, 56)
+ 
+print("Entered time", my_time)
+ 
+# calling constructor with 1 argument
+my_time = time(minute=12)
+print("\nTime with one argument", my_time)
+ 
+# Calling constructor with 0 argument
+my_time = time()
+print("\nTime without argument", my_time)
+-----------------------------------------------------------------------------------------------------------------------------
+2)Get hours, minutes, seconds, and microseconds:--
+After creating a time object, its attributes can also be printed separately. 
+
+from datetime import time
+ 
+Time = time(11, 34, 56)
+ 
+print("hour =", Time.hour)
+print("minute =", Time.minute)
+print("second =", Time.second)
+print("microsecond =", Time.microsecond)
+-----------------------------------------------------------------------------------------------------------------------------
+
+3)Convert Time object to String:--
+We can convert time object to string using the isoformat() method.
+
+from datetime import time
+ 
+# Creating Time object
+Time = time(12,24,36,1212)
+ 
+# Converting Time object to string
+Str = Time.isoformat()
+print("String Representation:", Str)
+print(type(Str))
+-----------------------------------------------------------------------------------------------------------------------------
+                                 DateTime class
+
+The DateTime class contains information on both date and time. Like a date object, datetime assumes the current Gregorian calendar extended in both directions; like a time object, 
+datetime assumes there are exactly 3600*24 seconds in every day.
+
+1)DateTime object representing DateTime in Python :--
+
+# Python program to demonstrate datetime object
+ 
+from datetime import datetime
+ 
+# Initializing constructor
+a = datetime(1999, 12, 12)
+print(a)
+ 
+# Initializing constructor with time parameters as well
+a = datetime(1999, 12, 12, 12, 12, 12, 342380)
+print(a)
+------------------------------------------------------------------------------------------------------------------------------------
+
+2)Get year, month, hour, minute, and timestamp:--
+After creating a DateTime object, its attributes can also be printed separately.
+
+from datetime import datetime
+ 
+a = datetime(1999, 12, 12, 12, 12, 12)
+ 
+print("year =", a.year)
+print("month =", a.month)
+print("hour =", a.hour)
+print("minute =", a.minute)
+print("timestamp =", a.timestamp())
+----------------------------------------------------------------------------------------------------------------------------------
+3)Current date and time:--
+You can print the current date and time using the Datetime.now() function. now() function returns the current local date and time. 
+
+
+from datetime import datetime
+ 
+# Calling now() function
+today = datetime.now()
+ 
+print("Current date and time is", today)
+-----------------------------------------------------------------------------------------------------------------------------------
+4)Convert Python Datetime to String
+We can convert Datetime to string in Python using the datetime.strftime and datetime.isoformat methods.
+
+from datetime import datetime as dt
+ 
+# Getting current date and time
+now = dt.now()
+ 
+string = dt.isoformat(now)
+print(string)
+print(type(string))
+---------------------------------------------------------------------------------------------------------------------------------
+Timedelta class:---
+Python timedelta class is used for calculating differences in dates and also can be used for date manipulations in Python. It is one of the easiest ways to perform date manipulations.
+
+1)Add days to datetime object:--
+
+# Timedelta function demonstration
+ 
+from datetime import datetime, timedelta
+ 
+ 
+# Using current time
+ini_time_for_now = datetime.now()
+ 
+# printing initial_date
+print("initial_date", str(ini_time_for_now))
+ 
+# Calculating future dates for two years
+future_date_after_2yrs = ini_time_for_now + timedelta(days=730)
+ 
+future_date_after_2days = ini_time_for_now + timedelta(days=2)
+ 
+# printing calculated future_dates
+print('future_date_after_2yrs:', str(future_date_after_2yrs))
+print('future_date_after_2days:', str(future_date_after_2days))
+-----------------------------------------------------------------------------------------------------------------------------------
+2)Difference between two date and times:--
+Date and Time difference can also be found using this class.
+
+# Timedelta function demonstration
+from datetime import datetime, timedelta
+ 
+# Using current time
+ini_time_for_now = datetime.now()
+ 
+# printing initial_date
+print("initial_date", str(ini_time_for_now))
+ 
+# Some another datetime
+new_final_time = ini_time_for_now + \timedelta(days=2)
+ 
+# printing new final_date
+print("new_final_time", str(new_final_time))
+ 
+ 
+# printing calculated past_dates
+print('Time difference:', str(new_final_time - ini_time_for_now))
+--------------------------------------------------------------------------------------------------------------------------------
+Format Datetime:---
+Formatting Datetime can be very necessary as the date representation may differe from place to place. Like in some countries it can be yyyy-mm-dd and in other country it can be 
+dd-mm-yyyy. To format Python Datetime strptime and strftime functions can be used.
+
+1)Python Datetime strftime:---
+strftime() method converts the given date, time or datetime object to the a string representation of the given format.
+
+from datetime import datetime as dt
+ 
+# Getting current date and time
+now = dt.now()
+print("Without formatting", now)
+ 
+# Example 1
+s = now.strftime("%A %m %-Y")
+print('\nExample 1:', s)
+ 
+# Example 2
+s = now.strftime("%a %-m %y")
+print('\nExample 2:', s)
+ 
+# Example 3
+s = now.strftime("%-I %p %S")
+print('\nExample 3:', s)
+ 
+# Example 4
+s = now.strftime("%H:%M:%S")
+print('\nExample 4:', s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Handling Python DateTime timezone:------------
+Timezones in DateTime can be used in the case where one might want to display time according to the timezone of a specific region. This can be done using the pytz module of Python. 
+This module serves the date-time conversion functionalities and helps users serving international client bases.
+
+from datetime import datetime
+from pytz import timezone
+ 
+format = "%Y-%m-%d %H:%M:%S %Z%z"
+ 
+# Current time in UTC
+now_utc = datetime.now(timezone('UTC'))
+print(now_utc.strftime(format))
+ 
+timezones = ['Asia/Kolkata', 'Europe/Kiev', 'America/New_York']
+ 
+for tzone in timezones:
+ 
+# Convert to Asia/Kolkata time zone
+    now_asia = now_utc.astimezone(timezone(tzone))
+    print(now_asia.strftime(format))
+
+
+
+
+
+ 								  
+															  
+															  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

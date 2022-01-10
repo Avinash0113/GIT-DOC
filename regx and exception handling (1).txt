@@ -1,0 +1,123 @@
+Exception handling:
+	Exception is the base class for all the exceptions in Python.
+
+	Try and Except Statement – Catching Exceptions
+		Try and except statements are used to catch and handle exceptions in Python. 
+		Statements that can raise exceptions are kept inside the try clause and the statements that handle the exception are written inside except clause.
+			Ex:
+				a = [1, 2, 3]
+				try:
+					print (a[1])
+					print (a[4])
+				except:
+					print("An error occured")
+				
+		
+	Catching Specific Exception:
+	A try statement can have more than one except clause, to specify handlers for different exceptions. Please note that at most one handler will be executed
+
+			try:
+				# statement(s)
+			except IndexError:
+				# statement(s)
+			except ValueError:
+				# statement(s)
+
+
+	Try with Else Clause:
+	In Python we can also use the else clause on the try-except block which must be present after all the except clauses. 
+	The code enters the else block only if the try clause does not raise an exception.
+
+	Finally Keyword in Python:
+	Python provides a keyword finally, which is always executed after the try and except blocks.
+	The final block always executes after normal termination of try block or after try block terminates due to some exception
+
+			try:
+				# Some Code.... 
+
+			except:
+				# optional block
+				# Handling of exception (if required)
+
+			else:
+				# execute if no exception
+
+			finally:
+				# Some code .....(always executed)		
+
+
+
+	Raising Exception:
+	The raise statement allows the programmer to force a specific exception to occur. The sole argument in raise indicates the exception to be raised.
+	This must be either an exception instance or an exception class (a class that derives from Exception).
+
+
+
+	Exception handling errors:
+	-Attribute errors				Raised id object accessing a member which is not available
+	-File not found errors			Raisedif file is not available
+	-Index error					Raised if index to sequence is out of bound
+	-KeyError						Raised if non-existent key requested for set or dictionary
+	-Name error						Raised if non-exixtant identifier used
+	-Type error 					Raised when wrong type of parameter is sent to a function
+	-Value error					Raised when parameter has invalid value
+	-Zero division error			Raised when division is done by zero
+
+
+
+
+
+Regular expressions:
+	A Regular Expression (RegEx) is a sequence of characters that defines a search pattern.
+	It can detect the presence or absence of a text by matching with a particular pattern, and also can split a pattern into one or more sub-patterns.
+	Python provides a re(regular expression) module that supports the use of regex in Python. 
+	Its primary function is to offer a search, where it takes a regular expression and a string.
+	 Regular expressions may contain
+		 -MetaCharacters
+		 -Special Sequences
+		 -regex module (functions)
+		 
+		 
+	MetaCharacters:
+		\(Backslash)	:	It is used to drop the special meaning of character following it
+		[](sqare braces):	Sqarebrackets specifies set of charecters you wish to match
+		^(Caret)		:	Matches the beginning
+		$(Doller) 		:	Matches the end
+		.(Period) 		:	Matches any character except newline
+		|(Alternation)	:	Means OR (Matches with any of the characters separated by it.
+		?(question mark):	Matches zero or one occurrence of the pattern left to it.
+		*(star)			:	Matches zero or more occurrences of the pattern left to it.
+		+(plus)			:	matches one or more occurrences of the pattern left to it.
+		{}(braces)		:	Indicate the number of occurrences of a preceding regex to match.
+		()(group)		:	Enclose a group of Regex
+		
+	Special sequences:
+		\A - Matches if the specified characters are at the start of a string.
+		\b - Matches if the specified characters are at the beginning or end of a word.
+		\B - Opposite of \b. Matches if the specified characters are not at the beginning or end of a word.
+		\d - Matches any decimal digit. Equivalent to [0-9]
+		\D - Matches any non-decimal digit. Equivalent to [^0-9]
+		\s - Matches where a string contains any whitespace character. Equivalent to [ \t\n\r\f\v].
+		\S - Matches where a string contains any non-whitespace character. Equivalent to [^ \t\n\r\f\v].
+		\w - Matches any alphanumeric character (digits and alphabets). Equivalent to [a-zA-Z0-9_]. By the way, underscore _ is also considered an alphanumeric character.
+		\W - Matches any non-alphanumeric character. Equivalent to [^a-zA-Z0-9_]
+		\Z - Matches if the specified characters are at the end of a string.
+		
+	regex module:
+		re.findall()	The re.findall() method returns a list of strings containing all matches.
+		re.split()		The re.split method splits the string where there is a match and returns a list of strings where the splits have occurred.
+		re.sub()		The method returns a string where matched occurrences are replaced with the content of replace variable.
+		re.subn()		The re.subn() is similar to re.sub() except it returns a tuple of 2 items containing the new string and the number of substitutions made.
+		re.search()		The re.search() method takes two arguments: a pattern and a string. The method looks for the first location where the RegEx pattern produces a match with the string.
+		re.escape() 	The re.escape return string with all non-alphanumerics backslashed, this is useful if you want to match an arbitrary literal string that may have regular expression metacharacters in it.
+
+
+
+
+
+
+
+
+
+
+ 
