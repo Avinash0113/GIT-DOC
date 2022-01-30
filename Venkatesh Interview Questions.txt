@@ -1,8 +1,8 @@
 
-
+ddddd
 ----------------------------------18th jan capgemini interview 2:30 pm(completed)----------------------------------
 
-1. Please show me your id?
+1. Please show me your id?ddd
 2. Tell me about yourself?
 3. Explain the project you are working on?
 4. How many projects did you worked?
