@@ -1,0 +1,27 @@
+----------------------------------8th feb HCL INTERVIEW (completed)----------------------------------
+
+
+1. Are you doing automation from the scratch and are you using any tool
+2. can you explain what are the testcases you are doing automation  
+3. do you know anything about networking, like how it will work
+4. I'll tell you about our requirement is like networking are where we automate the testcases in python
+5. did you worked on any framework tools
+6. do have knowledge on robot framework/ selenium 
+7. I have 10 devices connected in the suites ok, I give you the ip addresses, and by matching the ip's you need to fetch them using Regex
+or any other way to achieve this without using Regex
+8. write a program using while loop to print prime numbers in between the range of given numbers
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+

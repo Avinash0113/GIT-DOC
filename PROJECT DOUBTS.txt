@@ -1,0 +1,91 @@
+
+
+
+
+
+1. how do we get the host PC's IP address before API creation?
+
+2. how to install python and MSV on the host's pc"s?
+
+3. flashing or validation test which one is done first?
+
+4. By writing script in python, how flashing and validation tests are done?
+
+5. Eagle, Elan, Epic are products it will be the same for both SSD and HDD?
+
+6. which data types are used in our project?
+
+7. how code is written in Pytest to execute the subtest? Subtests are only for MSV stability purposes?
+
+8. how do we get firmware and config files?
+
+9. what is the process that should be done in python scripting and MSV framework?
+
+10. If there is a loss of data packs you stop the process or will you continue or recheck?
+
+11. How do you configure Pytest and how do you run test cases, for example, if you are having 15 test cases how will you prioritize those test cases?
+
+12. Have you worked on any virtualization like VMware, VFXI?
+
+13. what is the difference between abstract class and interface?
+
+14. How do you share the report with the client?
+
+15. Have you worked on CICD?
+
+16. Did you work on any framework tools?
+
+17. Are you doing automation from the scratch and are you using any tool?
+
+18. I have 10 devices connected in the suites ok, I give you the IP addresses, and by matching the IP's you need to fetch them using Regex or any other way to achieve this without using Regex?
+
+19. which tool you are using for backlogs and stories?
+
+20.what is the difference between inheritance and composition?
+
+21. Have you tested any rest API/ web services?
+
+22. while executing the test cases you will have some errors, how will you conclude that the issue is from the internal framework or target application?
+
+23. what are the basic things we need to take care of when we write a unit test using Pytest?
+
+24. can I run the command in remote machine using paramiko and can I know the files present in remote machine using paramiko?
+
+25. How will you communicate one process to another process using subprocess and what is the purpose of subprocess module and it only to run the command in local machine or even in the remote machine?
+
+26. How much do you have experience with networking, you know L2, L3 protocols anything?
+ 
+27. when your folder becomes a package?
+ 
+28. what is the API calling function which you used?
+ 
+29. Have you used pytest, you are having experience in the pytest framework, what are the basic rules to write the test cases for the pytest framework?
+ 
+30. Do you have experience with data drive and framework?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
