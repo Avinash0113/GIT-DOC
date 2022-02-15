@@ -1,0 +1,19 @@
+----------------------------------19th jan CBNITS interview 12:00 pm(completed)(6/10)----------------------------------
+
+1. Introduce yourself?
+2. what are packages/libraries you have used
+3. what do you know about list comprehension
+4. what do you know about generator
+5. difference between pop(),remove() in list
+6. how was memory managed in python
+7. what do you meant by abstract class
+8. use of __init__ method
+9. difference multi_level & multiple inheritance 
+10. python is called as interpreted language how do you justify that
+11. difference between list & tuple
+12. what is meant by decorator
+13. can you write with any custom decorator
+14. write a code that all 0's in the list should move to right-side , list_1= [8,0,0,65,79,0,21,0,0,0,54,12]
+15. string= "ffgyytuuugg" write a code to print that first unique character and position of that character
+16. list_1 = [1,2,10,3,4,2,5,6,8,9,11] write a code to print second largest number from the list
+17. done with your interview , you can ask if you are having any doubts

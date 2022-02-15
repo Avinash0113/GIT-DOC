@@ -1,0 +1,28 @@
+----------------------------------19th jan NEXSEMISYSTEMS interview 12:00 pm(completed)(6.5/10)----------------------------------
+
+1. can you tell me about your work/project experience
+2. to generate the logs which tool you are using
+3. do you print the logs any where
+4. tuple and list basic differences
+5. between tuple and list what is more faster and why & which one takes more memory
+6. do you have any idea how python storing the object in memory
+7. what is the basic difference between array and list
+8. what is decorator 
+9. what is namespace in python and why we use it
+10. write an example for list and dictionary comprehension and explain
+11. dict_1={1:10,2:20,3:30,4:40} 
+	dict_1.update({4:50})
+
+12. string_1="colour" i need to reverse the string what function should i use
+13. what is module and packages in python
+14. what is ananynomous function in python
+15. in slicing we are using negative index or -1 in python, why do we use that
+16. if you are having a python file what mode you use to execute that file
+17. what is generator in python
+18. in oops there is a super keyword, why we are using that
+19. in python if i have to copy a object, which function we are going to use 
+20. what is PYTHONPATH in python
+21. python has specifiers/access specifiers, any example
+22. there is garbage collection in python, can you explain how it works
+
+	

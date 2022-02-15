@@ -1,0 +1,40 @@
+----------------------------------4th feb TECH MAHINDRA INTERVIEW (completed)(6/10)----------------------------------
+
+
+1. can you brief about yourself,work experience that you have, roles and responsibilities that you played in your recent project
+2. can you explain about the target application that you have done the automation
+3. can you expalin detail about your product instead of your automation framework
+4. can you give me some critical cases that you are automated in your current project
+5. you worked with internal framework, is it a open source or from client
+6. while executing the test cases you will have some errors, how will you conclude that the issue is from internal framework or from target application
+7. what are the basic things we need to take care when you writing a unittest using pytest
+8. how do you rate yourself 3.75/5, what's the leftover 1.25
+9. what is the usage of paramiko
+10. give me the command to connect the remote machine using paramiko
+11. can i run the command in remote machine using paramiko and can i know the files present in remote machine using paramiko
+12. how will you communicate one process to another process using subprocess and what is the purpose of subprocess module and it only to run the command in local machine or even in remote machine
+13. can you explain how will you get the requirement and testing process of test cases
+14. how will you know the test cases was increased and who will give the test cases
+15. can you explain about SDLC
+16. where we will see the bug lifecycle    
+17. write a program for validating a email address using re module
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
