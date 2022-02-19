@@ -1,0 +1,159 @@
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (main)
+$ git pull origin main
+remote: Enumerating objects: 45, done.
+remote: Counting objects: 100% (45/45), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 41 (delta 6), reused 41 (delta 6), pack-reused 0
+Unpacking objects: 100% (41/41), 12.64 KiB | 7.00 KiB/s, done.
+From https://github.com/Raviteja474/Raviteja_teaching
+ * branch            main       -> FETCH_HEAD
+   cec5303..0de7f56  main       -> origin/main
+Updating cec5303..0de7f56
+Fast-forward
+ OOPS/OOPS theory                                   |  58 +++++++++++++++++--
+ OOPS/inheritace example.py                         |  25 ++++++++
+ OOPS/oops/oops/.idea/.gitignore                    |   8 +++
+ .../.idea/inspectionProfiles/profiles_settings.xml |   6 ++
+ OOPS/oops/oops/.idea/misc.xml                      |   4 ++
+ OOPS/oops/oops/.idea/modules.xml                   |   8 +++
+ OOPS/oops/oops/.idea/oops.iml                      |   8 +++
+ .../__pycache__/chinnayyagrandsons.cpython-310.pyc | Bin 0 -> 2840 bytes
+ .../__pycache__/chinnayyagrandsons.cpython-37.pyc  | Bin 0 -> 2908 bytes
+ .../__pycache__/chinnayyapadavala.cpython-310.pyc  | Bin 0 -> 837 bytes
+ .../__pycache__/chinnayyapadavala.cpython-37.pyc   | Bin 0 -> 844 bytes
+ .../oops/__pycache__/chinnayyasons.cpython-310.pyc | Bin 0 -> 1592 bytes
+ .../oops/__pycache__/chinnayyasons.cpython-37.pyc  | Bin 0 -> 1599 bytes
+ .../oops/__pycache__/education.cpython-310.pyc     | Bin 0 -> 734 bytes
+ .../oops/oops/__pycache__/education.cpython-37.pyc | Bin 0 -> 709 bytes
+ OOPS/oops/oops/chinnayyagrandsons.py               |  64 +++++++++++++++++++++
+ OOPS/oops/oops/chinnayyapadavala.py                |  17 ++++++
+ OOPS/oops/oops/chinnayyasons.py                    |  35 +++++++++++
+ OOPS/oops/oops/education.py                        |  18 ++++++
+ OOPS/oops/oops/practise_2.py                       |  37 ++++++++++++
+ OOPS/oops/oops/scope/.idea/.gitignore              |   8 +++
+ .../.idea/inspectionProfiles/profiles_settings.xml |   6 ++
+ OOPS/oops/oops/scope/.idea/misc.xml                |   4 ++
+ OOPS/oops/oops/scope/.idea/modules.xml             |   8 +++
+ OOPS/oops/oops/scope/.idea/scope.iml               |   8 +++
+ .../oops/scope/__pycache__/model.cpython-37.pyc    | Bin 0 -> 547 bytes
+ OOPS/oops/oops/scope/hi.py                         |  20 +++++++
+ OOPS/oops/oops/scope/model.py                      |   9 +++
+ OOPS/oops/oops/scope/program_1.py                  |  43 ++++++++++++++
+ OOPS/oops/oops/scope/program_2.py                  |  20 +++++++
+ OOPS/oops/oops/surveyer.py                         |  42 ++++++++++++++
+ OOPS/oops_practise_2.py                            |   2 +-
+ OOPS/rough.py                                      |  36 ++++++++++++
+ 33 files changed, 489 insertions(+), 5 deletions(-)
+ create mode 100644 OOPS/inheritace example.py
+ create mode 100644 OOPS/oops/oops/.idea/.gitignore
+ create mode 100644 OOPS/oops/oops/.idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 OOPS/oops/oops/.idea/misc.xml
+ create mode 100644 OOPS/oops/oops/.idea/modules.xml
+ create mode 100644 OOPS/oops/oops/.idea/oops.iml
+ create mode 100644 OOPS/oops/oops/__pycache__/chinnayyagrandsons.cpython-310.pyc
+ create mode 100644 OOPS/oops/oops/__pycache__/chinnayyagrandsons.cpython-37.pyc
+ create mode 100644 OOPS/oops/oops/__pycache__/chinnayyapadavala.cpython-310.pyc
+ create mode 100644 OOPS/oops/oops/__pycache__/chinnayyapadavala.cpython-37.pyc
+ create mode 100644 OOPS/oops/oops/__pycache__/chinnayyasons.cpython-310.pyc
+ create mode 100644 OOPS/oops/oops/__pycache__/chinnayyasons.cpython-37.pyc
+ create mode 100644 OOPS/oops/oops/__pycache__/education.cpython-310.pyc
+ create mode 100644 OOPS/oops/oops/__pycache__/education.cpython-37.pyc
+ create mode 100644 OOPS/oops/oops/chinnayyagrandsons.py
+ create mode 100644 OOPS/oops/oops/chinnayyapadavala.py
+ create mode 100644 OOPS/oops/oops/chinnayyasons.py
+ create mode 100644 OOPS/oops/oops/education.py
+ create mode 100644 OOPS/oops/oops/practise_2.py
+ create mode 100644 OOPS/oops/oops/scope/.idea/.gitignore
+ create mode 100644 OOPS/oops/oops/scope/.idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 OOPS/oops/oops/scope/.idea/misc.xml
+ create mode 100644 OOPS/oops/oops/scope/.idea/modules.xml
+ create mode 100644 OOPS/oops/oops/scope/.idea/scope.iml
+ create mode 100644 OOPS/oops/oops/scope/__pycache__/model.cpython-37.pyc
+ create mode 100644 OOPS/oops/oops/scope/hi.py
+ create mode 100644 OOPS/oops/oops/scope/model.py
+ create mode 100644 OOPS/oops/oops/scope/program_1.py
+ create mode 100644 OOPS/oops/oops/scope/program_2.py
+ create mode 100644 OOPS/oops/oops/surveyer.py
+ create mode 100644 OOPS/rough.py
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (main)
+$ git branch
+* main
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (main)
+$ git branch avinash_nov27
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (main)
+$ git checkout avinash_nov27
+Switched to branch 'avinash_nov27'
+M       Examples/EAMCET_conselling/EAMCET_mainfile.py
+M       Examples/EAMCET_conselling/paper_cricket.py
+M       Examples/EAMCET_conselling/practise_random_openpyxl_json.py
+M       comperhensions.py
+M       strings_practise_ascii.py
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$ git status
+On branch avinash_nov27
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Examples/EAMCET_conselling/EAMCET_mainfile.py
+        modified:   Examples/EAMCET_conselling/paper_cricket.py
+        modified:   Examples/EAMCET_conselling/practise_random_openpyxl_json.py
+        modified:   LEGB.py
+        modified:   comperhensions.py
+        modified:   strings_practise_ascii.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/.name
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$ git add .
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$ git status
+On branch avinash_nov27
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .idea/.name
+        modified:   Examples/EAMCET_conselling/EAMCET_mainfile.py
+        modified:   Examples/EAMCET_conselling/paper_cricket.py
+        modified:   Examples/EAMCET_conselling/practise_random_openpyxl_json.py
+        modified:   LEGB.py
+        modified:   comperhensions.py
+        modified:   strings_practise_ascii.py
+
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$ git commit -m "nov27"
+[avinash_nov27 d8f27fa] nov27
+ 7 files changed, 52 insertions(+), 63 deletions(-)
+ create mode 100644 .idea/.name
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$ git push
+fatal: The current branch avinash_nov27 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin avinash_nov27
+
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$ ^C
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$ ^C
+bash: $'\003': command not found
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$ git push --set-upstream origin avinash_nov27
+remote: Permission to Raviteja474/Raviteja_teaching.git denied to Avinash0113.
+fatal: unable to access 'https://github.com/Raviteja474/Raviteja_teaching.git/': The requested URL returned error: 403
+
+Avinash@ADMINRG-RDAEFHQ MINGW64 ~/Desktop/python_practise/Raviteja_teaching (avinash_nov27)
+$

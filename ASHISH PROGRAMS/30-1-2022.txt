@@ -1,0 +1,17 @@
+Input: 2
+need to print the two digit value that should start or end number with 2
+
+Output:
+[12, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 32, 42, 52, 62, 72, 82, 92]
+
+------------------------------------------------------------------------------------------------
+
+1)Input : test_list = [“geeks”, “best”, “peeks”], mesh = “_ee_s”
+Output : [‘geeks’, ‘peeks’]
+Explanation : Elements according to mesh are geeks and peeks.
+
+------------------------------------------------------------------------------------------------
+
+2)Input : test_list = [333, 893, 1948, 34, 2346], K = 3
+Output : [”, 89, 1948, 4, 246]
+Explanation : All occurrences of 3 are removed.
