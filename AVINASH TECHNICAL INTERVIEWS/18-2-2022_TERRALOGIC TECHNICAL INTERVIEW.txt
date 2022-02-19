@@ -1,0 +1,38 @@
+----------------------------------18th feb TERRALOGIC TECHNICAL INTERVIEW (completed)(5/10)----------------------------------
+
+
+1. Have you used winscp, whats's purpose of it
+2. did you work on linux,robot tool
+3. what is negative index in python
+4. If you want to read int from the user, which statement you use
+5. Read 5 integer numbers using a single statement,without using loops
+6. print a given word 5 times, with loop and without using loop
+7. do you know about Excel Macros
+ 
+ 
+8. execute the code 
+def testgen(index):
+weekdays = ['sun','mon','tue','wed','thu','fri','sat']
+yield weekdays[index]:
+yield weekdays[index+1]:
+day = testgen(0)
+print (next(day), next(day))
+
+
+9. printing pattern 
+
+			1
+          5 3 1
+         7 5 3 1
+        9 7 5 3 1
+		
+ 
+ 
+ 
+
+
+
+
+
+
+
