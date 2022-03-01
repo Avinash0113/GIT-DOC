@@ -1,0 +1,135 @@
+----------------------------------26th feb HCL TECHNICAL INTERVIEW ROUND-1 (completed)(8/10)----------------------------------
+
+
+
+tell me about yourself
+
+can you rotate you laptop in 360 degrees
+
+have you worked with UI/ API
+
+what is the automation     
+
+how do you do the validation/ testcase validation
+
+if testcase got fails , do you check it manually or your automation script will find the defects
+
+what are the technical challenges you faced for the automation
+
+for what purpose did you used beyond compare
+
+do you know why we use conval
+
+why do we use regression testing
+
+how frequent do you get the new releases
+
+what kind of testings you are doing in micron
+
+for performance what kind of tool do you use
+
+do you know how firmware update works
+
+have you used NVME spec for verification purpose
+
+what are the testing you follow in your project
+
+which framework did you work on
+
+have you wrote any automation script so far, can you give me the approx number that you have wrote
+
+what are the modules you have used while developing those test script
+
+what's the python version you are working on
+
+do you know how to clone the repository, what's the command
+
+if you modify the existing file how you push it to the repository, do we need to create a pull request before doing the changes
+
+what are the commands to push the code to the repository
+
+who will be the reviewers,when you create a PR
+
+if someone created a PR, will you be the member of that review
+ 
+what is merge conflict, how do you refer it
+
+how to create a branch
+
+write a code for reversing a number
+
+can you explain what is decorator with an example
+
+what is polymorphism
+
+what is MRO
+
+what is the difference between range and Xrange
+
+what is the default step value for range function
+
+can you write the syntax for range
+
+index starts with which value, how can i access the last element from the list
+
+can you write a simple code for list comprehension for getting the odd and even numbers
+
+write a program to count each element from the list that how many times each element was repeated(key:value)
+
+string1 = 'AB23GWS58TDE789WSC234MNO97899AD2BO' can you get the maximum number from the string using Regex
+
+what are the data structures that are available in python
+
+what is meant by tuple
+
+what is the difference between tuple and set
+
+tuple=(3,4,1,5,2) sort the elements output=(1,2,3,4,5)
+
+difference between Array and list
+
+what is docstring
+
+In subprocess what is the returncode for pass 
+
+have you worked with linux and windows
+
+In python how do you check whether the environment is windows or linux
+
+do you use ralley, how the sprint has been defined
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

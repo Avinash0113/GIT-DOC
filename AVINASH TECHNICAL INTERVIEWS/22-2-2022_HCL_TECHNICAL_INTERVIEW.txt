@@ -1,0 +1,22 @@
+----------------------------------22nd feb HCL TECHNICAL INTERVIEW (completed)(6/10)----------------------------------
+
+
+1. What is inheritance and write a program on it
+2. In the given string special characters should be replaced with spaces write a program on it
+3. What is package
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
