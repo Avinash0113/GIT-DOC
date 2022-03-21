@@ -1,0 +1,22 @@
+from flask import Flask, redirect, url_for
+import time
+
+app =Flask(__name__)
+
+@app.route('/')
+def home():
+    return {"Hi Avi":26}
+    #return "Avinash"
+
+@app.route('/systems')
+def systems():
+    print("I am came to systems.")
+    return redirect(url_for('C:/Users/Avinash/Desktop/python_practice/Raviteja_teaching/107.99.42.01.html')
+
+# @ app.route('/systems1')
+# def systems1():
+#     return 'C:/Users/Avinash/Desktop/python_practice/Raviteja_teaching/107.99.42.01.html'
+#     # return "Avinash"
+
+
+app.run(port=8000)
